@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+{% load static %}
+<html>
+<head>
+    <title> ME! Beautiful </title>
+</head>
+<body>
+
+    {% if user %}
+        {% for i in user %}
+            <p> {{i.first_name}}</p>
+        {% endfor %}
+    {% else %}
+        <p> no data to display</p>
+    {% endif %}
+
+</body>
+</html>
